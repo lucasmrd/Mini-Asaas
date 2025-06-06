@@ -17,12 +17,9 @@
 </div>
 <div class="main-container">
     <div class="form-container">
-
-        <atlas-form class="form-group"
-                submit-button-label="Salvar"
-                id="clientForm"
-                action="salvar"
-                method="post">
+        <atlas-form
+                class="form-group"
+                action="${createLink(controller: "cliente", action: "salvar")}">
             <atlas-layout gap="4">
                 <atlas-heading size="h2" theme="primary" class="text-center mb-4">Criar conta</atlas-heading>
                 <atlas-input
